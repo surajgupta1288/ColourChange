@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEB3B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:text="Colour Slider"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/screen_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="325dp"
+            android:layout_height="38dp"
+            android:text="Blue clour"
+            android:textColor="#FFEB3B" />
+
+        <SeekBar
+            android:id="@+id/color_slider_blue"
+            android:layout_width="324dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:layout_width="326dp"
+            android:layout_height="45dp"
+            android:text="Green clour"
+            android:textColor="#FFEB3B" />
+
+        <SeekBar
+            android:id="@+id/color_slider_green"
+            android:layout_width="328dp"
+            android:layout_height="64dp" />
+
+        <TextView
+            android:layout_width="328dp"
+            android:layout_height="36dp"
+            android:text="Red Colour"
+            android:textColor="#FFEB3B" />
+
+        <SeekBar
+            android:id="@+id/color_slider_red"
+            android:layout_width="328dp"
+            android:layout_height="47dp" />
+
+        <Button
+            android:id="@+id/btn_reset_color"
+            android:layout_width="278dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/small_button"
+            android:text="Rest Colour" />
+    </LinearLayout>
+
+</LinearLayout>
